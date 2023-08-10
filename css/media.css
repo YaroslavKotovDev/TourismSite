@@ -1,0 +1,187 @@
+/* Адаптация */
+
+@media (max-width: 1230px) {
+	.form {
+		width: auto;
+		height: auto;
+	}
+
+	.easepick-wrapper {
+		z-index: 9;
+	}
+
+	.form__input--when {
+		width: 200px;
+	}
+
+	.form__input--guests {
+		width: 140px;
+	}
+
+	.form__input--activity {
+		width: 180px;
+	}
+
+	.autoComplete_wrapper > input {
+		width: auto !important;
+	}
+
+	.button__sign__up{
+		padding: 1px 13px;
+	}
+	
+}
+
+@media (max-width: 1139px) {
+	.header {
+		height: auto;
+		min-height: 500px;
+		border-radius: 0 0 40px 40px;
+	}
+
+	.container--header {
+		justify-content: flex-start;
+		row-gap: 90px;
+	}
+
+	.header__title {
+		font-size: 32px;
+	}
+
+	.nav-list {
+		display: none;
+	}
+	.nav__user {
+		display: none;
+	}
+
+	.mobile-nav-btn {
+		display: block;
+	}
+
+	.button__sign__up{
+		display: none;
+	}
+
+	.main {
+		row-gap: 60px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.section__header {
+		margin-bottom: 34px;
+	}
+
+	.title-1 {
+		font-size: 26px;
+	}
+
+    .about-us__title {
+        font-size: 26px;
+    }
+
+	.section__cards--6-in-row {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.section__cards--4-in-row {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.card__text {
+		font-size: 14px;
+	}
+
+    .card__footer {
+		column-gap: 10px;
+	}
+
+    .about-us__text {
+		font-size: 14px;
+    }
+
+    .footer {
+		padding: 60px 0px;
+	}
+
+	.footer__row {
+		grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+	}
+
+    .footer__subscribe {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        max-width: none;
+    }
+
+    .subscribe__input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1040px) {
+	.form {
+		width: auto;
+		height: auto;
+		flex-direction: column;
+	}
+
+	.form__input-wrapper {
+		width: 100%;
+	}
+
+	.button--search {
+		width: 100%;
+	}
+}
+
+@media (max-width: 949px) {
+	.section__cards--2-in-row {
+		grid-template-columns: 1fr;
+	}
+    .about-us {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+	.section__cards--6-in-row {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.section__cards--4-in-row {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+    .card--wide {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us__desc {
+        gap: 18px;
+    }
+
+    .footer__row {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer__nav-wrapper {
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+	.section__cards--6-in-row {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+
+}

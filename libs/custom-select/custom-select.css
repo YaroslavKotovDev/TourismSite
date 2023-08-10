@@ -1,0 +1,95 @@
+.custom-select-container {
+  position: relative;
+  box-sizing: border-box;;
+}
+.custom-select-container * {
+  box-sizing: border-box;
+}
+.custom-select-container.is-disabled {
+  opacity: .333;
+}
+.custom-select-opener {
+  /* background-color: #ccc; */
+  /* padding: 0.5em; */
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+.custom-select-container select {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.custom-select-panel {
+  max-height: 0;
+  transition: max-height .5s ease-out, overflow-y 0.1s 0.5s;
+  overflow: hidden;
+  background-color: #e9e9e9;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  width: 100%;
+}
+.custom-select-container.is-open .custom-select-panel {
+  max-height: 10.7em;
+  overflow-y: auto
+}
+.custom-select-option {
+  padding: 0.5em;
+}
+.custom-select-option.has-focus {
+  background-color: LightBlue;
+}
+.custom-select-option.is-selected::before {
+  content: "✔";
+  padding-right: 0.5em;
+}
+.custom-select-optgroup > .custom-select-option {
+  padding-left: 2em;
+}
+.custom-select-optgroup::before {
+  content: attr(data-label);
+  display: block;
+  padding: 0.5em;
+  color: #888;
+}
+
+/* ------- OVERRIDES ------------ */
+
+/* Custom select */
+
+/* Structure Classes */
+
+/* containerClass: 'custom-select-container' may have isDisabledClass, isOpenClass */
+.custom-select-container {
+	padding-top: 0px;
+}
+
+/* panelClass: 'custom-select-panel' */
+.custom-select-panel {
+	font-size: 14px;
+	top: calc(100% + 22px);
+	background-color: #fff;
+	box-shadow: 0px 5px 20px rgb(8 41 55 / 34%);
+	border-radius: 0px 0px 8px 8px;
+}
+
+/* optionClass: 'custom-select-option' may have isSelectedClass, hasFocusClass */
+.custom-select-option {
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+
+.custom-select-option.is-selected {
+	font-weight: 600;
+}
+
+.custom-select-option.is-selected::before {
+	content: none;
+}
+
+.custom-select-option.has-focus {
+	background-color: #ebe5f9;
+}

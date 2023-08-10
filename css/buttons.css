@@ -1,0 +1,115 @@
+.button {
+	background: #7b61ff;
+	border-radius: 12px;
+    color: #fff;
+
+    transition: background-color 0.2s ease-in;
+}
+
+.button:hover {
+	background-color: #6344ff;
+}
+
+.button--huge {
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 600;
+
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.button--huge.element-animation.element-show{
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+
+@media only screen and (max-width: 600px) {
+    .button--huge {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+.button--search {
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+}
+
+.button--subscribe {
+    width: 72px;
+    height: 72px;
+    padding: 26px;
+}
+
+
+/* Button More */
+.button-more {
+    color: var(--theme-primary, #7B61FF);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    padding: 10px;
+    height: 44px;
+    border-radius: 12px;
+    font-size: 16px;
+    position: relative;
+
+    transition: background 0.2s ease-in;
+
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.button-more::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 30px;
+    background: rgba(94, 17, 238, 0.233);
+    width: 36px;
+    height: 46px;
+    transition: all 0.3s ease;
+}
+
+.button-more:hover {
+    color: #000;
+}
+
+.button-more:hover::before {
+    width: 100%;
+    background: rgba(94, 17, 238, 0.329);
+}
+
+.button-more:active {
+    transform: scale(.95);
+}
+
+
+.button-more.element-animation.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(30%);
+}
+
+
+.button__sign__up {
+    background-color: #6344ff;
+    padding: 10px 10px;
+    border-radius: 20px;
+
+    transition: all 0.3s linear;
+}
+
+.button__sign__up:hover {
+    background-color: #690ac2;
+}

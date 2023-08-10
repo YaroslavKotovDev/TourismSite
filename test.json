@@ -1,0 +1,9 @@
+{
+  "firstName": "Test firstname",
+  "lastName": "Test lastname",
+  "email": "test@gmail.com",
+  "phone": {
+    "countryCode": "+48",
+    "number": "511235675"
+  }
+}

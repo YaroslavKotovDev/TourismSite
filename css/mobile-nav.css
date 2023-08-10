@@ -1,0 +1,67 @@
+/* Стили для мобильного меню */
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	right: -320px;
+	width: 320px;
+	height: 100%;
+    z-index: 99;
+
+	display: flex;
+    flex-direction: column;
+
+	align-items: flex-start;
+    padding:40px;
+
+    /* background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195; */
+	background-color: #141d22;
+	transition: all 0.3s ease-in;
+}
+
+.mobile-nav--open {
+	right: 0;
+}
+
+.mobile-nav a {
+	color: #fff;
+}
+
+.mobile-nav a:hover, .mobile-nav a.active {
+	color: #a998ff;
+}
+
+.mobile-nav__list {
+	display: grid;
+	gap: 20px;
+	text-transform: capitalize;
+}
+
+.mobile-nav-fade {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(19 29 34 / 70%);
+	z-index: 98;
+
+	opacity: 0;
+	transition: opacity 0.2s ease-in;
+	pointer-events: none;
+}
+
+
+.mobile-nav-fade--open {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.mobile__nav-logo{
+	padding: 0px 0 0px 0;
+	filter: drop-shadow(3px 3px 7px #6d50ff);
+}
